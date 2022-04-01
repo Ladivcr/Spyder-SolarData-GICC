@@ -1,0 +1,18 @@
+CREATE DATABASE SolarFlare;
+
+CREATE TABLE observations (
+	id BIGINT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+	event_start DATETIME, max_peak_event DATETIME,
+	event_finish DATETIME,
+	classification CHAR(1),
+	sub_classification FLOAT,
+	observation_instrument VARCHAR(10),
+	max_energy VARCHAR(25),
+	total_energy VARCHAR(25),
+	active_region INT,
+	altitude DOUBLE,
+	azimuth DOUBLE,
+	latitude DOUBLE,
+	longitude DOUBLE,
+	created_at TIMESTAMP NULL
+	);
